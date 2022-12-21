@@ -1,5 +1,4 @@
-The convertToRomanNumerals will convert integer to roman numeral number 
-for example:
+The convertToRomanNumerals will convert normal numbers to Roman Numerals: eg
 
     1 --> I
     10 --> X

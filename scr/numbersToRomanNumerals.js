@@ -1,5 +1,5 @@
-function convertNumberToRomanNumerals(number){
+function convertNumbersToRomanNumerals(number){
 
-    return;
+    return "I";
 }
-module.exports =convertNumberToRomanNumerals;
+module.exports =convertNumbersToRomanNumerals;
