@@ -16,7 +16,7 @@ const convertNumbersToRomanNumerals = require('./numbersToRomanNumerals');
 //   expect(convertNumbersToRomanNumerals(50)).toEqual("C");
 // });
 
-const cases = [[1,"I"], [5,"V"], [10,"X"], [50,"L"], [100,"C"],[4,"IV"],[24,"XXIV"]];
+const cases = [[1,"I"], [5,"V"], [10,"X"], [50,"L"], [100,"C"],[4,"IV"],[8,"VIII"],[12,"XII"]];
 
 describe("convert numbers to roman numerals", () => {
   test.each(cases)(
