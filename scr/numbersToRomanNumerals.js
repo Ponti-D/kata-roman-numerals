@@ -14,24 +14,19 @@ function convertNumbersToRomanNumerals(number) {
   let romannumerals = "";
 
   let numbersArray = Object.values(romansToNumberPairs);
-  let min = Math.min(...numbersArray);
-  //let romanstring = "";
   do {
     for (const key of Object.keys(romansToNumberPairs)) {
       //number = 8
-      let highestRomanNumrals = Math.max(
+      let highestRomanNumrals = Math.max( // max = 5
         ...numbersArray.filter((e) => e <= number)
-      ); // max = 5
+      ); 
       if (romansToNumberPairs[key] === highestRomanNumrals) {
-        console.log(highestRomanNumrals);
         romannumerals += key; //<-- "V" <--"VI" <--"VII" , --"VIII"
-        console.log(romannumerals);
         number -= highestRomanNumrals; // <-- 8-5 number = 3 <-- 3-1 = 2 <-- 2-1 =1 <--1-0
-        console.log(number);
       }
     }
   } while (number > 0);
-  
+
   return romannumerals;
 }
 
